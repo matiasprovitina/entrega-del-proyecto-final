@@ -1,0 +1,242 @@
+/*cabecera de la pagina*/
+/* diseño mobile*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+form{ 
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #f1d5d5;
+}
+form label {
+    font-weight: bold;
+    display: inline-block;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000000;
+    height: 70px;
+    margin: 0px; 
+    }
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #15b9fa;
+    }
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    list-style-type: none;
+}
+.navbar {
+    display: none;
+}
+.navbar ul li{
+    display: inline-block;
+    background-color: hsl(197, 91%, 46%);
+    border-radius: 05px;
+    border: 01px solid #000000;
+    padding: 6px;
+    margin: 0px;
+}
+.navbar ul li a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-size: 20px;
+    transition: color 0.7s ease-in, font-size 1.5s;
+}
+.titulos {
+    text-align: center;
+    color: hsl(197, 91%, 46%);
+}
+.navbar ul li a:hover {
+    color: #ffffff;
+    font-size: 24px;
+    }
+/*fin de la cabecera */
+/*cuerpo de la pagina */
+body {
+    background-color: #1b1a1a;
+}
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "nav" 
+    "productos"
+    "publicidad"
+    "servicios"
+    "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-areas: 
+        "nav" 
+        "productos2" 
+        "publicidad"
+        "skateventas"
+        "precios";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    .cuerpo {
+        color: #eff0ef;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: none;
+        }
+
+    #skateventas {
+        grid-area: productos2;
+        background-image: url(../imagen/element.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 100px;
+    }
+    #precios {
+        grid-area: nav;
+        border: 07px solid;
+        height: 390px;
+        border-color: #ffffff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 0px;
+        }
+nav {
+    grid-area: nav;
+}
+#footerindex {
+    grid-area: footer;
+    background-color: #000000;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+#productos {
+    grid-area: productos;
+    background-image: url(../imagen/skate.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    animation-name: fondo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#servicios {
+    grid-area: servicios;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #1fbbe2;
+}
+aside {
+    grid-area: publicidad;
+    
+}
+section {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#precios {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ color: #ffffff;
+}
+.sectionventas{
+    display: grid;
+    grid-area: section;
+    grid-template-areas: "img img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: #ffffff;
+}
+.img img{
+    display: grid;
+    grid-area: img;
+    width: 200px;
+    height: 250px;
+}
+#guia {
+    color: #eff0ef;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@keyframes fondo {
+    0%{
+    background-color: #eff0ef;
+    padding: 20px;
+    }
+    25%{
+    background-color: #1fbbe2;
+    padding: 30px;
+    }
+    50%{
+        background-color: #000000;
+        padding: 10px;
+    }
+    100%{
+        background-color: #eff0ef;
+        padding: 20px;
+    }
+
+}
+@media screen and (max-width: 599px) and (orientation: landscape) {
+.grid {
+      grid-template-rows: 3fr 2fr 1fr;
+}
+}
+    
+/*fin del cuerpo */
+/*fin de diseño mobile */
+/*diseño para taleta */ 
+@media screen and (min-width: 600px)and (orientation: portrait) {
+   .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "nav productos"
+    "nav publicidad"
+    "nav servicios"
+    "footer footer";
+   }
+}
+@media screen and (min-width) and (orientation: landscape){
+    
+}
+/* diseño de desktop */
+@media screen and (min-width: 1200px) {
+    .grid {
+        display: grid;
+        grid-template-areas: 
+        "nav productos publicidad"
+        "nav servicios publicidad"
+        "footer footer footer";
+        grid-template-rows: 300px 250px 200px;
+        grid-template-columns: 20% auto 10%;
+        height: 100vh;
+        }
+        .grid2 {
+            display: grid;
+            grid-template-areas: 
+            "nav productos2 publicidad"
+            "nav skateventas publicidad"
+            "nav precios publicidad";
+            grid-template-rows: 300px 250px 200px;
+            grid-template-columns: 20% auto 10%;
+            height: 100vh;
+        }
+        .navbar {
+            display: flex;
+        }
+    }
