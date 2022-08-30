@@ -95,8 +95,7 @@ body {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-decoration: none;
         }
-
-    #skateventas {
+        #skateventas {
         grid-area: productos2;
         background-image: url(../imagen/element.jpg);
         background-repeat: no-repeat;
