@@ -20,11 +20,6 @@
   display: flex;
   justify-content: flex-end;
   padding: 15px;
-  list-style-type: none;
-}
-
-.navbar {
-  display: none;
 }
 
 .navbar ul li {
