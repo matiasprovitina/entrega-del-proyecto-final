@@ -1,0 +1,101 @@
+body {
+    background-color: #1b1a1a;
+}
+.grid {
+    display: grid;
+    grid-template-areas: 
+    "nav" 
+    "productos"
+    "publicidad"
+    "servicios"
+    "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    height: 100vh;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-areas: 
+        "nav" 
+        "productos2" 
+        "publicidad"
+        "skateventas"
+        "precios";
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    .cuerpo {
+        color: #eff0ef;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-decoration: none;
+        }
+        #skateventas {
+        grid-area: productos2;
+        background-image: url(../imagen/element.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 100px;
+    }
+    #precios {
+        grid-area: nav;
+        border: 07px solid;
+        height: 390px;
+        border-color: #ffffff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 0px;
+        }
+nav {
+    grid-area: nav;
+}
+
+#productos {
+    grid-area: productos;
+    background-image: url(../imagen/skate.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    animation-name: fondo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#servicios {
+    grid-area: servicios;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    text-align: center;
+    color: #1fbbe2;
+}
+aside {
+    grid-area: publicidad;
+    
+}
+section {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#precios {
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ color: #ffffff;
+}
+.sectionventas{
+    display: grid;
+    grid-area: section;
+    grid-template-areas: "img img";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: #ffffff;
+}
+.img img{
+    display: grid;
+    grid-area: img;
+    width: 200px;
+    height: 250px;
+}
+#guia {
+    color: #eff0ef;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

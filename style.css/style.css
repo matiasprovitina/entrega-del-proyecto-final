@@ -1,24 +1,6 @@
 @charset "UTF-8";
 /*cabecera de la pagina*/
 /* diseño mobile*/
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-form {
-  width: 300px;
-  padding: 16px;
-  border-radius: 10px;
-  margin: auto;
-  background-color: #f1d5d5;
-}
-
-form label {
-  font-weight: bold;
-  display: inline-block;
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -73,8 +55,16 @@ form label {
   font-size: 24px;
 }
 
-/*fin de la cabecera */
-/*cuerpo de la pagina */
+#footerindex {
+  grid-area: footer;
+  background-color: #000000;
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: #1b1a1a;
 }
@@ -120,16 +110,6 @@ body {
 
 nav {
   grid-area: nav;
-}
-
-#footerindex {
-  grid-area: footer;
-  background-color: #000000;
-  color: hsl(0deg, 0%, 100%);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
 }
 
 #productos {
@@ -190,6 +170,26 @@ section {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+form {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #f1d5d5;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*fin de la cabecera */
+/*cuerpo de la pagina */
 @-webkit-keyframes fondo {
   0% {
     background-color: #eff0ef;
@@ -208,7 +208,6 @@ section {
     padding: 20px;
   }
 }
-
 @keyframes fondo {
   0% {
     background-color: #eff0ef;

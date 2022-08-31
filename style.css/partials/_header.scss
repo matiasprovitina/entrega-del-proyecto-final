@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #000000;
+    height: 70px;
+    margin: 0px; 
+    }
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #15b9fa;
+    }
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    list-style-type: none;
+}
+.navbar {
+    display: none;
+}
+.navbar ul li{
+    display: inline-block;
+    background-color: hsl(197, 91%, 46%);
+    border-radius: 05px;
+    border: 01px solid #000000;
+    padding: 6px;
+    margin: 0px;
+}
+.navbar ul li a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    font-size: 20px;
+    transition: color 0.7s ease-in, font-size 1.5s;
+}
+.titulos {
+    text-align: center;
+    color: hsl(197, 91%, 46%);
+}
+.navbar ul li a:hover {
+    color: #ffffff;
+    font-size: 24px;
+    }
