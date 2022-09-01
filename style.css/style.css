@@ -50,6 +50,23 @@
   font-size: 24px;
 }
 
+.navbar {
+  display: flex;
+}
+
+form {
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #f1d5d5;
+}
+
+form label {
+  font-weight: bold;
+  display: inline-block;
+}
+
 #footerindex {
   grid-area: footer;
   background-color: #000000;
@@ -165,35 +182,6 @@ section {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-form {
-  width: 300px;
-  padding: 16px;
-  border-radius: 10px;
-  margin: auto;
-  background-color: #f1d5d5;
-}
-
-form label {
-  font-weight: bold;
-  display: inline-block;
-}
-
-* {
-  padding: 0px;
-  margin: 0px;
-}
-
-/*fin de la cabecera */
-/*cuerpo de la pagina */
-
-@media screen and (max-width: 599px) and (orientation: landscape) {
-  .grid {
-    grid-template-rows: 3fr 2fr 1fr;
-  }
-}
-/*fin del cuerpo */
-/*fin de diseño mobile */
-/*diseño para taleta */
 @media screen and (min-width: 600px) and (orientation: portrait) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -216,5 +204,58 @@ form label {
     grid-template-columns: 20% auto 10%;
     height: 100vh;
   }
+  .navbar {
+    display: flex;
+  }
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
-}/*# sourceMappingURL=style.css.map */
+/*fin de la cabecera */
+/*cuerpo de la pagina */
+@-webkit-keyframes fondo {
+  0% {
+    background-color: #eff0ef;
+    padding: 20px;
+  }
+  25% {
+    background-color: #1fbbe2;
+    padding: 30px;
+  }
+  50% {
+    background-color: #000000;
+    padding: 10px;
+  }
+  100% {
+    background-color: #eff0ef;
+    padding: 20px;
+  }
+}
+@keyframes fondo {
+  0% {
+    background-color: #eff0ef;
+    padding: 20px;
+  }
+  25% {
+    background-color: #1fbbe2;
+    padding: 30px;
+  }
+  50% {
+    background-color: #000000;
+    padding: 10px;
+  }
+  100% {
+    background-color: #eff0ef;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  .grid {
+    grid-template-rows: 3fr 2fr 1fr;
+  }
+}
+/*fin del cuerpo */
+/*fin de diseño mobile */
+/*diseño para taleta *//*# sourceMappingURL=style.css.map */
