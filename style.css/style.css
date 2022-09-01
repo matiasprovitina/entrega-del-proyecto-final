@@ -185,42 +185,7 @@ form label {
 
 /*fin de la cabecera */
 /*cuerpo de la pagina */
-@-webkit-keyframes fondo {
-  0% {
-    background-color: #eff0ef;
-    padding: 20px;
-  }
-  25% {
-    background-color: #1fbbe2;
-    padding: 30px;
-  }
-  50% {
-    background-color: #000000;
-    padding: 10px;
-  }
-  100% {
-    background-color: #eff0ef;
-    padding: 20px;
-  }
-}
-@keyframes fondo {
-  0% {
-    background-color: #eff0ef;
-    padding: 20px;
-  }
-  25% {
-    background-color: #1fbbe2;
-    padding: 30px;
-  }
-  50% {
-    background-color: #000000;
-    padding: 10px;
-  }
-  100% {
-    background-color: #eff0ef;
-    padding: 20px;
-  }
-}
+
 @media screen and (max-width: 599px) and (orientation: landscape) {
   .grid {
     grid-template-rows: 3fr 2fr 1fr;
@@ -251,7 +216,5 @@ form label {
     grid-template-columns: 20% auto 10%;
     height: 100vh;
   }
-  .navbar {
-    display: flex;
-  }
+
 }/*# sourceMappingURL=style.css.map */

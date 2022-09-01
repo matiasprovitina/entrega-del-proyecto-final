@@ -1,6 +1,6 @@
 /*cabecera de la pagina*/
 /* diseño mobile*/
-@import "./partials/header", "./partials/footer", "./partials/body", "./partials/form";
+@import "./partials/color", "./partials/boders","./partials/footer", "./partials/body", "./partials/form";
 
 * {
     padding: 0px;
@@ -38,42 +38,3 @@
 /*fin del cuerpo */
 /*fin de diseño mobile */
 /*diseño para taleta */ 
-@media screen and (min-width: 600px)and (orientation: portrait) {
-   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 
-    "nav productos"
-    "nav publicidad"
-    "nav servicios"
-    "footer footer";
-   }
-}
-@media screen and (min-width) and (orientation: landscape){
-    
-}
-/* diseño de desktop */
-@media screen and (min-width: 1200px) {
-    .grid {
-        display: grid;
-        grid-template-areas: 
-        "nav productos publicidad"
-        "nav servicios publicidad"
-        "footer footer footer";
-        grid-template-rows: 300px 250px 200px;
-        grid-template-columns: 20% auto 10%;
-        height: 100vh;
-        }
-        .grid2 {
-            display: grid;
-            grid-template-areas: 
-            "nav productos2 publicidad"
-            "nav skateventas publicidad"
-            "nav precios publicidad";
-            grid-template-rows: 300px 250px 200px;
-            grid-template-columns: 20% auto 10%;
-            height: 100vh;
-        }
-        .navbar {
-            display: flex;
-        }
-    }

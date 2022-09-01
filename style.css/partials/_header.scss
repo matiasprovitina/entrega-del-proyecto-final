@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #000000;
+    background-color: $headercolor;
     height: 70px;
     margin: 0px; 
     }
 .title {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #15b9fa;
+    color: $titlecolor;
     }
 .navbar ul{
     display: flex;
@@ -19,9 +19,9 @@
 
 .navbar ul li{
     display: inline-block;
-    background-color: hsl(197, 91%, 46%);
-    border-radius: 05px;
-    border: 01px solid #000000;
+    background-color: $navbarcolor;
+    border-radius: $navbarradius;
+    border: $navbar;
     padding: 6px;
     margin: 0px;
 }
@@ -41,3 +41,6 @@
     color: #ffffff;
     font-size: 24px;
     }
+    .navbar {
+        display: flex;
+      }
