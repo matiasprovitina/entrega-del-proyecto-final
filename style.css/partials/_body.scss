@@ -99,6 +99,7 @@ section {
     color: #eff0ef;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 @media screen and (min-width: 600px)and (orientation: portrait) {
     .grid {
      grid-template-columns: repeat(2, 1fr);
