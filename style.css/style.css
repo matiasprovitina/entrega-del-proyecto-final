@@ -77,67 +77,17 @@ form label {
   margin: 0px;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #1b1a1a;
 }
 
-.grid {
-  display: grid;
-  grid-template-areas: "nav" "productos" "publicidad" "servicios" "footer";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  height: 100vh;
-}
-
-.grid2 {
-  display: grid;
-  grid-template-areas: "nav" "productos2" "publicidad" "skateventas" "precios";
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr;
-  height: 100vh;
-}
-
-.cuerpo {
-  color: #eff0ef;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-decoration: none;
-}
-
-#skateventas {
-  grid-area: productos2;
-  background-image: url(../imagen/element.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 100px;
-}
-
-#precios {
-  grid-area: nav;
-  border: 7px solid;
-  height: 390px;
-  border-color: #ffffff;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  padding: 0px;
-}
-
 nav {
   grid-area: nav;
-}
-
-#productos {
-  grid-area: productos;
-  background-image: url(../imagen/skate.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: all 1s ease-in-out;
-  cursor: pointer;
-  -webkit-animation-name: fondo;
-          animation-name: fondo;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 #servicios {
@@ -156,11 +106,6 @@ section {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-#precios {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: #ffffff;
-}
-
 .sectionventas {
   display: grid;
   grid-area: section;
@@ -170,16 +115,82 @@ section {
   color: #ffffff;
 }
 
-.img img {
-  display: grid;
-  grid-area: img;
-  width: 200px;
-  height: 250px;
-}
-
 #guia {
   color: #eff0ef;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+/*ventas de skate*/
+.ventadeskate {
+  display: block;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  height: 33rem;
+  padding: 0.8rem 1rem;
+  margin: 1rem 1rem;
+  background-color: rgb(247, 245, 245);
+  border-radius: 15px;
+  transition: 0.2s ease all;
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+.card img {
+  width: 70%;
+}
+
+.card div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.card h3 {
+  margin: 1rem auto 0.5rem 0;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 @media screen and (min-width: 600px) and (orientation: portrait) {
