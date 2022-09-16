@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -21,7 +21,7 @@
   height: 15rem;
   padding: 0.8rem 1rem;
   margin: 1rem 1rem;
-  background-color: rgb(247, 245, 245);
+  background-color: #15b9fa;
   border-radius: 15px;
   transition: 0.2s ease all;
 }
