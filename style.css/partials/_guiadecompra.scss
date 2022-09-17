@@ -1,0 +1,33 @@
+
+
+
+.blogContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(13, 13, 14);
+}
+.work{
+    font-size: 2rem;
+    margin: 4rem 0;
+    color: rgb(87, 235, 18);
+}
+.blog, .blogIzq{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.blogIzq{
+    flex-direction: row-reverse;
+}
+.blog div,
+.blogIzq div{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+.imgguiadecompra {
+    width: 30%;
+}
