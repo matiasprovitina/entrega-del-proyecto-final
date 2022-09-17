@@ -76,10 +76,12 @@ h3 {
 .conocenos {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(253, 252, 252);
+  text-decoration: none;
 }
 
 .imgconocenos {
   width: 90%;
+  position: center;
 }
 
 .header {
