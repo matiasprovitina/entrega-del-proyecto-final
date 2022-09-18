@@ -4,7 +4,7 @@
     justify-content: space-between;
     padding: 10px;
     background-color: $headercolor;
-    height: 70px;
+    height: 80px;
     margin: 0px; 
     }
 .title {
@@ -14,7 +14,7 @@
 .navbar ul{
     display: flex;
     justify-content: flex-end;
-    padding: 15px;
+    padding: 0;
 }
 
 .navbar ul li{

@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 body {
     background-color: #1b1a1a;
@@ -46,18 +48,18 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 15rem;
-    height: 43rem;
+    width: 18rem;
+    height: 40rem;
     padding: 0.8rem 1rem;
     margin: 1rem 1rem;
-    background-color: rgb(247, 245, 245);
+    background-color: rgb(4, 129, 187);
     border-radius: 15px;
     transition: .2s ease all;
 }
@@ -93,6 +95,15 @@ h3 {
 .card:hover {
     transform: scale(1.03);
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.bannerdeoferta {
+    width: 100%;
+    align-items: center;
+    height: 50%;
+}
+.bannerformadepago {
+    width: 100%;
+    height: 50%;
 }
 @media screen and (min-width: 600px)and (orientation: portrait) {
     .grid {
