@@ -158,6 +158,10 @@ h3 {
   display: flex;
 }
 
+.navbar-toggler {
+  background-color: #15b9fa;
+}
+
 .titulodeinicio {
   color: #ffffff;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
