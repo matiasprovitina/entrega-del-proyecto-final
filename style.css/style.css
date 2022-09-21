@@ -90,7 +90,7 @@ h3 {
 }
 
 .imgconocenos {
-  width: 90%;
+  width: 100%;
   position: center;
 }
 
@@ -103,6 +103,10 @@ h3 {
 
 .logomercadopago {
   width: 4%;
+}
+
+.imgregistrame {
+  width: 100%;
 }
 
 .header {
@@ -383,6 +387,17 @@ h3 {
 
 .imgguiadecompra {
   width: 30%;
+}
+
+.imgskatepark {
+  width: 35%;
+  border-radius: 20% solid;
+}
+
+.mapaparqueespaña {
+  font-size: 50%;
+  height: 10%;
+  width: 15%;
 }
 
 * {
