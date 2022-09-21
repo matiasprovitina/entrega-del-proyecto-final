@@ -111,7 +111,6 @@ h3 {
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 10px;
   background-color: #000000;
@@ -160,6 +159,7 @@ h3 {
 
 .navbar {
   display: flex;
+  z-index: 99;
 }
 
 .navbar-toggler {
@@ -390,14 +390,17 @@ h3 {
 }
 
 .imgskatepark {
-  width: 35%;
-  border-radius: 20% solid;
+  width: 50%;
 }
 
-.mapaparqueespaña {
-  font-size: 50%;
-  height: 10%;
-  width: 15%;
+.skatepark {
+  display: flex;
+  margin: 5rem 3rem;
+  align-items: center;
+}
+
+.mapa_parque_españa {
+  width: 50%;
 }
 
 * {
