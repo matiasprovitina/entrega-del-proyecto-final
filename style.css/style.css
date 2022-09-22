@@ -109,6 +109,10 @@ h3 {
   width: 100%;
 }
 
+.img3 {
+  width: 100px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -385,8 +389,8 @@ h3 {
   text-align: left;
 }
 
-.imgguiadecompra {
-  width: 30%;
+.img_guia_de_compra {
+  width: 55%;
 }
 
 .imgskatepark {
@@ -399,7 +403,7 @@ h3 {
   align-items: center;
 }
 
-.mapa_parque_españa {
+.mapa_de_skateparks {
   width: 50%;
 }
 
